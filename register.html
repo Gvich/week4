@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <link rel="stylesheet" type="text/css" href="register.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <title>Airstar</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Notable&family=Poppins:wght@300;400;500;600;700&family=Volkhov:wght@700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <header>
+      <div class="container1">
+        <div class="nav">
+          <a href="index.html"><img src="image/icon.svg" alt="logo" class="logo" style="margin-top:12px;"></a>
+          <p class="logo_name">AIRSTAR</p>
+          <ul class="menu">
+            <li>
+              <a href="#" class="undline">
+                Flights
+              </a>
+            </li>
+            <li>
+              <a href="#" class="undline">
+                Booking
+              </a>
+            </li>
+            <li>
+              <a href="#" class="undline">
+                Login
+              </a>
+            </li>
+            <li>
+              <select id="lang" name="lang" class="button" style="width: 44px; height: 28px; margin-top: 3px">
+                <option value="EN">EN</option>
+                <option value="RU">RU</option>
+                <option value="UA">UA</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </header>
+
+    <main>
+      <div class="container2">
+        <h1 class="logo_name4">Registration</h1>
+
+        <div class="inp-row">
+          <label for="inp-name">Name</label>
+          <input required type="text" placeholder="Your name" id="inp-name"/>
+        </div>
+
+        <div class="inp-row">
+          <label for="inp-sname">Surname</label>
+          <input required type="text" placeholder="Your surname" id="inp-sname"/>
+        </div>
+
+        <div class="inp-row">
+          <form>
+            <label for="age">Age</label>
+            <input type="number" step="1" min="8" max="100" value="18" id="age" name="age"/>
+          </form>
+        </div>
+
+        <div class="inp-row">
+              <label>Please select your gender:</label>
+              <input type="radio" id="contactChoice1"
+                     name="contact" value="male">
+              <label for="contactChoice1" class="radiobuttons">Male</label>
+              <input type="radio" id="contactChoice2"
+                     name="contact" value="female">
+              <label for="contactChoice2" class="radiobuttons">Female</label>
+              <input type="radio" id="contactChoice3"
+                     name="contact" value="other">
+              <label for="contactChoice3">Other</label>
+            </div>
+
+        <div class="inp-row">
+          <label for="inp-email">Email</label>
+          <input required type="text" placeholder="Your email" id="inp-email"/>
+        </div>
+
+        <div class="inp-row">
+          <label for="inp-passwd">Password</label>
+          <input required type="password" placeholder="Your password" id="inp-passwd"/>
+        </div>
+
+        <div class="inp-row">
+            <label for="text">Tell about You</label>
+            <textarea id="text" name="text"
+                      rows="5" cols="33">It was a dark and stormy night...</textarea>
+        </div>
+
+        <div>
+          <input id="submit-btn" type="submit" value="Submit" class="button"/>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
